@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra một số lớn hay nhỏ hơn 0</title>
+</head>
+<body>
+<p>Nhập số cần kiểm tra </p>
+<input type="text" id="number">
+<p id="checkNumber"></p>
+<button  onclick="checkNumber()">Kiểm tra</button>
+<script>
+
+    function checkNumber() {
+        let number = parseInt(document.getElementById("number").value);
+        if (number < 0) {
+            document.getElementById("checkNumber").innerHTML = number + " nhỏ hơn 0";
+        } else document.getElementById("checkNumber").innerHTML = number + " lớn hơn 0";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học sinh</title>
+</head>
+<body>
+<script>
+    let test_marks = parseInt(prompt("Nhập điểm kiểm tra "));
+    let mid_term_score = parseInt(prompt("Nhập điểm giữa kỳ "));
+    let end_of_term = parseInt(prompt("Nhập điểm cuối kỳ "));
+    let mediumScore = 0 ;
+    mediumScore = (test_marks + mid_term_score*2 + end_of_term*3)/6;
+    if (mediumScore < 3.5) {
+        alert("Điểm trung bình " + mediumScore + " Xếp loại yếu");
+    } else if (3.5 <= mediumScore || mediumScore < 5){
+        alert("Điểm trung bình " + mediumScore + " Xếp loại trung bình");
+    } else  if (5 <= mediumScore || mediumScore < 7) {
+        alert("Điểm trung bình " + mediumScore + " Xếp loại trung khá");
+    } else if (7 <= mediumScore || mediumScore < 8.5) {
+        alert("Điểm trung bình " + mediumScore + " Xếp loại trung giỏi");
+    } else {
+        alert("Điểm trung bình " + mediumScore + " Xếp loại trung xuất sắc");
+    }
+</script>
+</body>
+</html>

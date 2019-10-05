@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính phần trăm hoa hồng</title>
+</head>
+<body>
+<script>
+    let numberProduct = prompt("Nhập số sản phẩm bán được");
+    let money = prompt("Nhập giá bán 1 sản phẩm");
+    let revenue ;
+    revenue = numberProduct * money;
+    if (numberProduct < 100) {
+        alert("Tổng số tiền bán được là " + revenue +  " Tiền hoa hồng nhận được " + 0.1*revenue);
+    } else if (100 <= numberProduct || numberProduct > 200) {
+        alert("Tổng số tiền bán được là " + revenue +  " Tiền hoa hồng nhận được " + 0.15*revenue);
+    } else if (200 <= numberProduct || numberProduct > 500) {
+        alert("Tổng số tiền bán được là " + revenue +  " Tiền hoa hồng nhận được " + 0.2*revenue);
+    } else {
+        alert("Tổng số tiền bán được là " + revenue +  " Tiền hoa hồng nhận được " + 0.25*revenue);
+    }
+</script>
+</body>
+</html>
